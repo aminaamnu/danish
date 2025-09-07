@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan | Student Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="12th-grade Computer Science student at Karuvanpoyil HSS. Passionate about coding and technology.">
+</head>
+<body>
+    <div class="background-gradient" aria-hidden="true"></div>
+    <header class="container">
+        <nav class="nav">
+            <div class="brand">My Profile</div>
+            <a class="cta" href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container" id="home">
+            <div class="hero__media">
+                <img src="pic2.jpg" alt="Profile photo" class="avatar">
+            </div>
+            <div class="hero__content">
+                <h1>Hi, I'm <span class="highlight">Danish Mammed nk</span></h1>
+                <p class="tagline">12th Grade Computer Science Student at Karuvanpoyil HSS</p>
+                <p class="intro">I love building clean, modern web pages and exploring algorithms. I'm currently learning HTML, CSS, and JavaScript, and I enjoy creating small projects that make learning fun.</p>
+                <div class="hero__actions">
+                    <a href="#projects" class="button primary">See Projects</a>
+                    <a href="#about" class="button">About Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards container" id="about">
+            <article class="card">
+                <h2>About</h2>
+                <p>I'm a student passionate about computer science. I focus on writing clean code and building simple, beautiful user interfaces. My goal is to pursue software engineering and contribute to impactful tech.</p>
+            </article>
+            <article class="card">
+                <h2>Education</h2>
+                <ul class="list">
+                    <li><strong>Karuvanpoyil HSS</strong> — 12th Grade, Computer Science</li>
+                    <li><strong>PTM HSS</strong> — 10th Grade</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h2>Skills</h2>
+                <ul class="pill-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="projects container" id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-card__body">
+                        <h3>Study Planner</h3>
+                        <p>A simple planner to schedule study sessions and track progress.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-card__body">
+                        <h3>Portfolio Starter</h3>
+                        <p>This website! Built with semantic HTML and modern CSS.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-card__body">
+                        <h3>Algorithm Demos</h3>
+                        <p>Interactive demos to visualize sorting and searching algorithms.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact container" id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out for collaboration or questions.</p>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:mammeddanish@gmail.com">mammeddanish@gmail.com</a></li>
+                <li>Phone: <a href="tel:9497868262">9497868262</a></li>
+
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <small>© <span id="year"></span> Danish — Built with HTML & CSS</small>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
+
